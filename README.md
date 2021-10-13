@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+# Implementação OAuth2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O seguinte projeto implementa uma autenticação usando o OAuth, possuíndo opção de Login e Logout.
 
-## Available Scripts
+Ao clicar em login, aparecerá para escolher qual conta do google será utilizada, e então deve-se inserir as informações dessa conta (login e senha).
 
-In the project directory, you can run:
+Após realizar o login, a página exibirá as informações da conta utilizada no login (nome e e-mail), juntamente com um botão para realizar logout.
+
+Caso o usuário clicar em Logout, o programa irá realizar os procedimentos e deslogar da conta, voltando para a tela inicial com o botão de Login.
+
+# Funcionamento
+
+O programa funciona utilizando o pacote npm 'react-google-login', que disponíbiliza um componente de login e um de logout.
+
+O uníco paramêtro obrigatório nos dois, é o clientID, que foi gerado através da API do google. Outros paramêtros servem para configurações para lidar com eventos (sucesso no login/logout), e também para modificações na aparência desses componentes. 
+
+## Scripts disponíveis
+
+No diretório do projeto, rodar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Roda a aplicação em modo de desenvolvimento.\
+Abrir [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
